@@ -1,9 +1,12 @@
-class TermLife:
+class TotalNeed:
     def __init__(self):
-        self.premium = 0
-        self.length = 0
-        self.coverage = input("how much coverage do you need?")
+        self.income = 0
+        self.expenses = 0
+        self.kids = input("how much coverage do you need?")
+        self.existing_coverage
+    def premium(self):
+        
     
     
-dan = TermLife()
-sara = TermLife()
+dan = TotalNeed()
+sara = TotalNeed()
