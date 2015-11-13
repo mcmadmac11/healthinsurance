@@ -1,0 +1,24 @@
+
+
+Deductible:  
+
+Out-of-pocket Maximum:
+
+CoPay:
+
+
+CoInsurance:
+
+
+
+Need to make text files with above information listed and link them to available plans
+
+
+*** a  policy has a $500 deductible, a 20% coinsurance clause, and a $2,000 out of-pocket maximum (or stop loss)
+***insured incurs $15,000 of expenses
+***The stop loss will come into effect after the insured has paid $2,000 out of pocket, which equals the $500
+   deductible plus $1,500 coinsurance, or 20% of $7,500. The insurer pays all expenses beyond the stop loss.
+***The insurer pays [ (100% - 20%) × ($7,500) ] + [ (100%) × ($15,000 - $7,500 - $500) ]
+ = (80%) ($7,500) + (100%) ($7,000)
+ = $13,000
+ = $15,000 minus the $2,000 stop loss. 
