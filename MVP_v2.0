@@ -1,0 +1,57 @@
+class HealthPlan(object):
+    
+    
+    def __init__(self, name, deductible_amt, out_of_pocket_max, co_ins, monthly_premium):
+        self.name = name
+        self.deductible = deductible_amt
+        self.stop_loss = out_of_pocket_max
+        self.co_ins_rate = co_ins
+        self.premium = monthly_premium
+        
+    def calc_medical_cost(self, cost_of_procedure):
+        if cost_of_procedure <= self.deductible:
+            print("Your bill for the procedure is: $",cost_of_procedure)
+        elif self.deductible + ((cost_of_procedure - self.deductible) * self.co_ins_rate) >=self.stop_loss:
+            print("Your bill for the procedure is: $",stop_loss)
+        else:
+            print("Your bill for the procedure is: $",self.deductible + ((cost_of_procedure - self.deductible) * self.co_ins_rate))
+
+    def display(self):
+        usermsg = input('The purpose of this program is to determine which health insurance policy would save the client the most money. The program will now ask for a few basic paramaters about the two health plans you would like to compare.')
+        
+    def capture_deductible(self):
+        self.deductible = input('Please enter the annual deductible for the plan:$')
+        print('You Entered: ', self.deductible)
+        return self.deductible
+        
+    def capture_co_ins(self):
+        co_insurance_share = int(input('Please enter the co-insurance percentage specified by the plan:  '))
+        print('***TIP*** This means that until you have met your out-of-pocket maximum ,the percentage of medical costs you are responsible for AFTER you have met your deductible is =%', self.co_insure_share, 'This is an often confused feature of health insurance that uses co-insurance')
+        co_insure_percent = self.co_insurance * 12 
+        return self.co_insure_percent
+        
+    def capture_out_of_pocket_max(self):
+        max_cost = input('Please enter the out-of-pocket maximum dollar amount specified by the plan:  ')
+        print('The most you will pay for covered services for a calender year is:$ ', self.max_cost)
+        return self.max_cost
+        
+    def capture_premium(self):
+        monthly_premium = input('Please enter the monthly premium for the plan:$ ')
+        annual_premium = self.monthly_premium * 12
+        print('Your total annual premium is:$ ', self.annual_premium)
+        return self.annual_premium    
+            plan_inputs = [capture_deductible, capture_co_ins, capture_out_of_pocket_max, capture_premium]
+            return plan_inputs            
+
+        
+
+plan_A = HealthPlan('Plan A', 5000,)
+        
+compute = HealthPlan(plan_inputs)
+
+compute.calc_medical_cost(10000)
+
+
+
+
+        
